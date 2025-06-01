@@ -1,419 +1,56 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- STYLE SHEETS -->
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bike Edmonton | Home</title>
-
-
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BeastlyOrca</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+      text-align: center;
+    }
+    header {
+      background-color: #1e1e2f;
+      color: white;
+      padding: 2rem 1rem;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      padding: 3rem 1rem;
+    }
+    footer {
+      background-color: #eee;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
 </head>
-
-<!----- By: Nadir Bakridi 3084652 P4 Bike Edmonton Nov.25/24 */------>
-
-<!-- This is where all the body content begins -->
 <body>
-    
-
-    <header style="background-color: #04387C;">
-
-        <!---------------- DESKTOP NAVIGATION --------------------->
-        <div class="margin-default">
-            
-            <nav id="top-nav" class="padding-40 flex-row-center hiddenMobile">
-
-                <!-- Logo being weird -->
-                <div id="yama-logo"><a href="index.html"><img src="images/bikeEdLogo.png" width="40px" height="40px"></a></div>
-
-                <ul>
-                    <li class="here"><a href="index.html">Home</a></li>
-                    <li class="all-caps"><a href="#">About</a></li>
-                    <li class="all-caps"><a href="shopBikes.html">Shop Bikes</a></li>
-                    <li class="all-caps"><a href="workshop.html">Workshop</a></li>
-                    <li class="all-caps"><a href="services.html">Services</a></li>
-                    <li class="all-caps"><a href="#">Learn</a></li>
-                </ul>
-                <button class="btn-dark"><a>Blog</a></button>
-
-            </nav>
-
-        </div>
-        <!---------------- DESKTOP NAVIGATION --------------------->
-
-
-        <!---------------- MOBILE NAVIGATION --------------------->
-		<nav id="top-nav" class="padding-40 flex-row-center hiddenDesktop">
-
-            <div id="yama-logo"><a href="index.html"><img src="images/yama-logo.svg"></a></div>
-
-            <div>
-
-                <svg width="48" height="23" viewBox="0 0 48 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="48" height="2" transform="translate(0 0.634029)" fill="black"/>
-                    <rect width="48" height="2" transform="translate(0 10.634)" fill="black"/>
-                    <rect width="48" height="2" transform="translate(0 20.634)" fill="black"/>
-                    </svg>
-                    
-            </div>
-
-        </nav>
-        <!---------------- MOBILE NAVIGATION --------------------->
-
-
-    </header>
-
-    <!-- Hero Section -->
-
-    <!---------------- DESKTOP HERO  --------------------->
-    <section class="hiddenMobile">
-
-        <div id="explore-img">
-
-        
-            <div class="gradient"></div>
-            
-            <div class="explore reverse">
-
-                <h2 class="h2-reverse">Welcome To Bike Edmonton!</h2>
-                
-                <p style="width: 600px">Whether you ride once a week or year-round, Bike Edmonton gives you the tools you need to enjoy cycling.</p>
-                <p style="width: 600px">Our vision is a city where cycling is safe, widespread, and accessible to people of all comfort levels.</p>
-
-                <button class="btnOrange"><a>Build Spotlight</a></button>
-                
-            </div>
-
-        </div>
-        
+  <header>
+    <h1>Welcome to BeastlyOrca</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Hello!</h2>
+      <p>This is the official website of BeastlyOrca. Stay tuned for updates on projects, experiments, and creations.</p>
     </section>
-    <!---------------- DESKTOP HERO  --------------------->
-
-    <!---------------- MOBILE HERO  --------------------->
-    <section class="hiddenDesktop2">
-
-        <div class="padding-40 margin-default">
-            <h1>Get Back to Wild</h1>
-        </div>
-
-        <div class="margin-default paddingB">
-            <p class="all-caps">Custom Adventure Vans,</p>
-            <p class="all-caps">Crafted to Order</p>
-        </div>
-        
-        <div class="img-hero">
-            <img src="images/yama-hero-2.jpg" class="img-100">
-        </div>
-
-    </section>
-    <!---------------- MOBILE HERO  --------------------->
-
-
-    <!-- What Drives Us -->
-
-    <!---------------- DESKTOP DRIVE US  --------------------->
-    <section class="hiddenMobile" style="background-color: #FFFFFF;">
-
-        <div class="padding-default margin-default"> <!-- Basecamp Row -->
-            
-            <div class="">
-                <h1 class="h1Blue">Shop For Bikes And Parts</h1>
-            </div>
-
-            <div class="flex-row-top">
-
-                <div class="imgContainer2">
-
-                    <img src="images/bunchBikes.jpg" class="imgFirstLeft">
-
-                    <div class="bottomGrad2">
-
-                        <h2 class="imgSub2">Bikes</h2>
-                        <h3 class="imgSub3">Shop For Bikes</h3>
-
-                    </div>
-                    
-                </div>
-                
-
-                <div class = "flexCol">
-
-                    <div class="imgContainer3">
-                        <img src="images/purpParts.webp" class="imgNextRight">
-
-                        <div class="bottomGrad3">
-                            <h2 class="imgSub2">Bikes</h2>
-                            <h3 class="imgSub3">Shop For Bikes</h3>
-                        </div>
-                    </div>
-                    
-                    <div class="imgContainer3">
-                        <img src="images/bikeRepair.jpg" class="imgNextRight">
-                        <div class="bottomGrad3">
-                            <h2 class="imgSub2">Bikes</h2>
-                            <h3 class="imgSub3">Shop For Bikes</h3>
-                        </div>
-                    </div>
-                    
-
-                </div>
-                
-            </div>
-            
-        </div>
-
-    </section>
-    <!---------------- DESKTOP DRIVE US  --------------------->
-
-    <!---------------- Mobile DRIVE US  --------------------->
-    <section class="hiddenDesktop2" style="background-color: #F1EFEC;">
-
-        <div class="padding-default margin-default flexLeft"> <!-- Basecamp Row -->
-            <div class="flex-1 paddingB">
-                <h3 class="all-caps">Basecamp reimagined</h3>
-            </div>
-            <div class="flex-2">
-                <h2>What drives us</h2>
-                <p class="p-lg">We finely tune our vans for year-round, off-grid travel throughout the  Canadian Rockies and beyond. From designing the van together to when our  clients get behind the wheel, we ensure a smooth, informative, and  exciting ride.</p>
-                
-                <div class="mobileHero paddingB">
-                    <svg width="358" height="47" viewBox="0 0 358 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 23.5818C0 10.706 10.4379 0.268066 23.3137 0.268066H334.686C347.562 0.268066 358 10.706 358 23.5818C358 36.4576 347.562 46.8955 334.686 46.8955H23.3137C10.4379 46.8955 0 36.4576 0 23.5818Z" fill="black"/>
-                        <path d="M25.29 28.5818V18.6818H32.715V20.3468H27.36V22.8068H31.575V24.3968H27.36V26.9168H32.925V28.5818H25.29ZM44.3522 28.5818H41.8922L39.7322 25.0718L37.6022 28.5818H35.2322L38.6372 23.5868L35.4722 18.6818H37.9022L39.8972 22.0118L41.9222 18.6818H44.1722L40.9922 23.5118L44.3522 28.5818ZM51.5319 18.6818C52.2919 18.6818 52.9419 18.8118 53.4819 19.0718C54.0219 19.3218 54.4369 19.6868 54.7269 20.1668C55.0269 20.6368 55.1769 21.2068 55.1769 21.8768C55.1769 22.5468 55.0269 23.1218 54.7269 23.6018C54.4369 24.0718 54.0219 24.4368 53.4819 24.6968C52.9419 24.9468 52.2919 25.0718 51.5319 25.0718H49.4469V28.5818H47.3769V18.6818H51.5319ZM51.2169 23.4368C51.8369 23.4368 52.3019 23.3068 52.6119 23.0468C52.9219 22.7768 53.0769 22.3868 53.0769 21.8768C53.0769 21.3568 52.9219 20.9668 52.6119 20.7068C52.3019 20.4468 51.8369 20.3168 51.2169 20.3168H49.4469V23.4368H51.2169ZM60.6442 26.9168H65.8642V28.5818H58.5742V18.6818H60.6442V26.9168ZM73.0211 18.5318C74.0011 18.5318 74.8461 18.7368 75.5561 19.1468C76.2661 19.5568 76.8111 20.1418 77.1911 20.9018C77.5811 21.6618 77.7761 22.5718 77.7761 23.6318C77.7761 24.6918 77.5811 25.6018 77.1911 26.3618C76.8111 27.1218 76.2661 27.7068 75.5561 28.1168C74.8461 28.5268 74.0011 28.7318 73.0211 28.7318C72.0411 28.7318 71.1911 28.5268 70.4711 28.1168C69.7611 27.7068 69.2111 27.1218 68.8211 26.3618C68.4411 25.6018 68.2511 24.6918 68.2511 23.6318C68.2511 22.5718 68.4411 21.6618 68.8211 20.9018C69.2111 20.1418 69.7611 19.5568 70.4711 19.1468C71.1911 18.7368 72.0411 18.5318 73.0211 18.5318ZM73.0211 20.2268C72.4711 20.2268 71.9961 20.3568 71.5961 20.6168C71.2061 20.8768 70.9061 21.2618 70.6961 21.7718C70.4961 22.2818 70.3961 22.9018 70.3961 23.6318C70.3961 24.3618 70.4961 24.9818 70.6961 25.4918C70.9061 26.0018 71.2061 26.3868 71.5961 26.6468C71.9961 26.9068 72.4711 27.0368 73.0211 27.0368C73.5711 27.0368 74.0411 26.9068 74.4311 26.6468C74.8211 26.3868 75.1161 26.0018 75.3161 25.4918C75.5261 24.9818 75.6311 24.3618 75.6311 23.6318C75.6311 22.9018 75.5261 22.2818 75.3161 21.7718C75.1161 21.2618 74.8211 20.8768 74.4311 20.6168C74.0411 20.3568 73.5711 20.2268 73.0211 20.2268ZM85.7292 18.6818C86.8492 18.6818 87.7292 18.9518 88.3692 19.4918C89.0092 20.0318 89.3292 20.7568 89.3292 21.6668C89.3292 22.6368 89.0092 23.3818 88.3692 23.9018C87.7292 24.4118 86.8542 24.6668 85.7442 24.6668L85.5342 24.7868H83.4042V28.5818H81.3642V18.6818H85.7292ZM85.4892 23.2118C86.0692 23.2118 86.4992 23.0968 86.7792 22.8668C87.0692 22.6268 87.2142 22.2618 87.2142 21.7718C87.2142 21.2818 87.0692 20.9218 86.7792 20.6918C86.4992 20.4518 86.0692 20.3318 85.4892 20.3318H83.4042V23.2118H85.4892ZM86.7042 23.6468L89.9142 28.5818H87.5892L84.9342 24.2468L86.7042 23.6468ZM93.0595 28.5818V18.6818H100.485V20.3468H95.1295V22.8068H99.3445V24.3968H95.1295V26.9168H100.695V28.5818H93.0595ZM114.412 18.5318C115.392 18.5318 116.237 18.7368 116.947 19.1468C117.657 19.5568 118.202 20.1418 118.582 20.9018C118.972 21.6618 119.167 22.5718 119.167 23.6318C119.167 24.6918 118.972 25.6018 118.582 26.3618C118.202 27.1218 117.657 27.7068 116.947 28.1168C116.237 28.5268 115.392 28.7318 114.412 28.7318C113.432 28.7318 112.582 28.5268 111.862 28.1168C111.152 27.7068 110.602 27.1218 110.212 26.3618C109.832 25.6018 109.642 24.6918 109.642 23.6318C109.642 22.5718 109.832 21.6618 110.212 20.9018C110.602 20.1418 111.152 19.5568 111.862 19.1468C112.582 18.7368 113.432 18.5318 114.412 18.5318ZM114.412 20.2268C113.862 20.2268 113.387 20.3568 112.987 20.6168C112.597 20.8768 112.297 21.2618 112.087 21.7718C111.887 22.2818 111.787 22.9018 111.787 23.6318C111.787 24.3618 111.887 24.9818 112.087 25.4918C112.297 26.0018 112.597 26.3868 112.987 26.6468C113.387 26.9068 113.862 27.0368 114.412 27.0368C114.962 27.0368 115.432 26.9068 115.822 26.6468C116.212 26.3868 116.507 26.0018 116.707 25.4918C116.917 24.9818 117.022 24.3618 117.022 23.6318C117.022 22.9018 116.917 22.2818 116.707 21.7718C116.507 21.2618 116.212 20.8768 115.822 20.6168C115.432 20.3568 114.962 20.2268 114.412 20.2268ZM131.02 18.6818V24.6818C131.02 26.0318 130.66 27.0468 129.94 27.7268C129.22 28.3968 128.17 28.7318 126.79 28.7318C125.41 28.7318 124.36 28.3968 123.64 27.7268C122.92 27.0468 122.56 26.0318 122.56 24.6818V18.6818H124.63V24.5918C124.63 25.4218 124.805 26.0368 125.155 26.4368C125.515 26.8368 126.06 27.0368 126.79 27.0368C127.52 27.0368 128.06 26.8368 128.41 26.4368C128.76 26.0368 128.935 25.4218 128.935 24.5918V18.6818H131.02ZM139.269 18.6818C140.389 18.6818 141.269 18.9518 141.909 19.4918C142.549 20.0318 142.869 20.7568 142.869 21.6668C142.869 22.6368 142.549 23.3818 141.909 23.9018C141.269 24.4118 140.394 24.6668 139.284 24.6668L139.074 24.7868H136.944V28.5818H134.904V18.6818H139.269ZM139.029 23.2118C139.609 23.2118 140.039 23.0968 140.319 22.8668C140.609 22.6268 140.754 22.2618 140.754 21.7718C140.754 21.2818 140.609 20.9218 140.319 20.6918C140.039 20.4518 139.609 20.3318 139.029 20.3318H136.944V23.2118H139.029ZM140.244 23.6468L143.454 28.5818H141.129L138.474 24.2468L140.244 23.6468ZM156.84 18.6818C157.6 18.6818 158.25 18.8118 158.79 19.0718C159.33 19.3218 159.745 19.6868 160.035 20.1668C160.335 20.6368 160.485 21.2068 160.485 21.8768C160.485 22.5468 160.335 23.1218 160.035 23.6018C159.745 24.0718 159.33 24.4368 158.79 24.6968C158.25 24.9468 157.6 25.0718 156.84 25.0718H154.755V28.5818H152.685V18.6818H156.84ZM156.525 23.4368C157.145 23.4368 157.61 23.3068 157.92 23.0468C158.23 22.7768 158.385 22.3868 158.385 21.8768C158.385 21.3568 158.23 20.9668 157.92 20.7068C157.61 20.4468 157.145 20.3168 156.525 20.3168H154.755V23.4368H156.525ZM168.247 18.6818C169.367 18.6818 170.247 18.9518 170.887 19.4918C171.527 20.0318 171.847 20.7568 171.847 21.6668C171.847 22.6368 171.527 23.3818 170.887 23.9018C170.247 24.4118 169.372 24.6668 168.262 24.6668L168.052 24.7868H165.922V28.5818H163.882V18.6818H168.247ZM168.007 23.2118C168.587 23.2118 169.017 23.0968 169.297 22.8668C169.587 22.6268 169.732 22.2618 169.732 21.7718C169.732 21.2818 169.587 20.9218 169.297 20.6918C169.017 20.4518 168.587 20.3318 168.007 20.3318H165.922V23.2118H168.007ZM169.222 23.6468L172.432 28.5818H170.107L167.452 24.2468L169.222 23.6468ZM179.764 18.5318C180.744 18.5318 181.589 18.7368 182.299 19.1468C183.009 19.5568 183.554 20.1418 183.934 20.9018C184.324 21.6618 184.519 22.5718 184.519 23.6318C184.519 24.6918 184.324 25.6018 183.934 26.3618C183.554 27.1218 183.009 27.7068 182.299 28.1168C181.589 28.5268 180.744 28.7318 179.764 28.7318C178.784 28.7318 177.934 28.5268 177.214 28.1168C176.504 27.7068 175.954 27.1218 175.564 26.3618C175.184 25.6018 174.994 24.6918 174.994 23.6318C174.994 22.5718 175.184 21.6618 175.564 20.9018C175.954 20.1418 176.504 19.5568 177.214 19.1468C177.934 18.7368 178.784 18.5318 179.764 18.5318ZM179.764 20.2268C179.214 20.2268 178.739 20.3568 178.339 20.6168C177.949 20.8768 177.649 21.2618 177.439 21.7718C177.239 22.2818 177.139 22.9018 177.139 23.6318C177.139 24.3618 177.239 24.9818 177.439 25.4918C177.649 26.0018 177.949 26.3868 178.339 26.6468C178.739 26.9068 179.214 27.0368 179.764 27.0368C180.314 27.0368 180.784 26.9068 181.174 26.6468C181.564 26.3868 181.859 26.0018 182.059 25.4918C182.269 24.9818 182.374 24.3618 182.374 23.6318C182.374 22.9018 182.269 22.2818 182.059 21.7718C181.859 21.2618 181.564 20.8768 181.174 20.6168C180.784 20.3568 180.314 20.2268 179.764 20.2268ZM196.582 25.8518C196.392 26.4918 196.092 27.0268 195.682 27.4568C195.272 27.8868 194.787 28.2068 194.227 28.4168C193.667 28.6268 193.052 28.7318 192.382 28.7318C191.402 28.7318 190.552 28.5268 189.832 28.1168C189.122 27.7068 188.572 27.1218 188.182 26.3618C187.802 25.6018 187.612 24.6918 187.612 23.6318C187.612 22.5718 187.802 21.6618 188.182 20.9018C188.572 20.1418 189.122 19.5568 189.832 19.1468C190.552 18.7368 191.392 18.5318 192.352 18.5318C193.032 18.5318 193.647 18.6268 194.197 18.8168C194.747 18.9968 195.212 19.2818 195.592 19.6718C195.982 20.0518 196.267 20.5268 196.447 21.0968L194.572 21.8918C194.402 21.2918 194.142 20.8668 193.792 20.6168C193.442 20.3568 192.992 20.2268 192.442 20.2268C191.902 20.2268 191.427 20.3568 191.017 20.6168C190.617 20.8768 190.307 21.2618 190.087 21.7718C189.867 22.2718 189.757 22.8918 189.757 23.6318C189.757 24.3618 189.857 24.9818 190.057 25.4918C190.267 26.0018 190.572 26.3868 190.972 26.6468C191.372 26.9068 191.862 27.0368 192.442 27.0368C192.982 27.0368 193.447 26.8918 193.837 26.6018C194.237 26.3118 194.517 25.8718 194.677 25.2818L196.582 25.8518ZM199.847 28.5818V18.6818H207.272V20.3468H201.917V22.8068H206.132V24.3968H201.917V26.9168H207.482V28.5818H199.847ZM214.454 18.5318C215.354 18.5318 216.144 18.6868 216.824 18.9968C217.504 19.3068 218.084 19.7668 218.564 20.3768L217.409 21.7118C216.999 21.1918 216.549 20.8118 216.059 20.5718C215.579 20.3218 215.019 20.1968 214.379 20.1968C213.959 20.1968 213.609 20.2518 213.329 20.3618C213.059 20.4718 212.859 20.6168 212.729 20.7968C212.609 20.9768 212.549 21.1768 212.549 21.3968C212.549 21.6668 212.654 21.8968 212.864 22.0868C213.074 22.2668 213.434 22.4168 213.944 22.5368L215.789 22.9568C216.769 23.1768 217.469 23.5068 217.889 23.9468C218.319 24.3768 218.534 24.9368 218.534 25.6268C218.534 26.2768 218.364 26.8368 218.024 27.3068C217.684 27.7668 217.209 28.1218 216.599 28.3718C215.989 28.6118 215.289 28.7318 214.499 28.7318C213.809 28.7318 213.174 28.6518 212.594 28.4918C212.024 28.3218 211.514 28.0918 211.064 27.8018C210.614 27.5118 210.239 27.1768 209.939 26.7968L211.109 25.4018C211.339 25.7218 211.624 26.0068 211.964 26.2568C212.304 26.5068 212.689 26.7068 213.119 26.8568C213.559 26.9968 214.019 27.0668 214.499 27.0668C214.909 27.0668 215.254 27.0218 215.534 26.9318C215.824 26.8318 216.039 26.6968 216.179 26.5268C216.329 26.3468 216.404 26.1318 216.404 25.8818C216.404 25.6218 216.314 25.4018 216.134 25.2218C215.964 25.0318 215.644 24.8868 215.174 24.7868L213.164 24.3368C212.584 24.1968 212.084 24.0168 211.664 23.7968C211.254 23.5668 210.939 23.2768 210.719 22.9268C210.509 22.5668 210.404 22.1418 210.404 21.6518C210.404 21.0618 210.564 20.5318 210.884 20.0618C211.204 19.5918 211.664 19.2218 212.264 18.9518C212.874 18.6718 213.604 18.5318 214.454 18.5318ZM225.607 18.5318C226.507 18.5318 227.297 18.6868 227.977 18.9968C228.657 19.3068 229.237 19.7668 229.717 20.3768L228.562 21.7118C228.152 21.1918 227.702 20.8118 227.212 20.5718C226.732 20.3218 226.172 20.1968 225.532 20.1968C225.112 20.1968 224.762 20.2518 224.482 20.3618C224.212 20.4718 224.012 20.6168 223.882 20.7968C223.762 20.9768 223.702 21.1768 223.702 21.3968C223.702 21.6668 223.807 21.8968 224.017 22.0868C224.227 22.2668 224.587 22.4168 225.097 22.5368L226.942 22.9568C227.922 23.1768 228.622 23.5068 229.042 23.9468C229.472 24.3768 229.687 24.9368 229.687 25.6268C229.687 26.2768 229.517 26.8368 229.177 27.3068C228.837 27.7668 228.362 28.1218 227.752 28.3718C227.142 28.6118 226.442 28.7318 225.652 28.7318C224.962 28.7318 224.327 28.6518 223.747 28.4918C223.177 28.3218 222.667 28.0918 222.217 27.8018C221.767 27.5118 221.392 27.1768 221.092 26.7968L222.262 25.4018C222.492 25.7218 222.777 26.0068 223.117 26.2568C223.457 26.5068 223.842 26.7068 224.272 26.8568C224.712 26.9968 225.172 27.0668 225.652 27.0668C226.062 27.0668 226.407 27.0218 226.687 26.9318C226.977 26.8318 227.192 26.6968 227.332 26.5268C227.482 26.3468 227.557 26.1318 227.557 25.8818C227.557 25.6218 227.467 25.4018 227.287 25.2218C227.117 25.0318 226.797 24.8868 226.327 24.7868L224.317 24.3368C223.737 24.1968 223.237 24.0168 222.817 23.7968C222.407 23.5668 222.092 23.2768 221.872 22.9268C221.662 22.5668 221.557 22.1418 221.557 21.6518C221.557 21.0618 221.717 20.5318 222.037 20.0618C222.357 19.5918 222.817 19.2218 223.417 18.9518C224.027 18.6718 224.757 18.5318 225.607 18.5318Z" fill="white"/>
-                        <path d="M325.737 29.9457L334.342 21.3403V29.2386H336.343V17.9249H325.029L325.029 19.926L332.928 19.926L324.322 28.5315L325.737 29.9457Z" fill="white"/>
-                    </svg>
-
-                </div>
-                    
-            </div>
-        </div>
-
-        <div class="margin-default mobileLeft"> <!-- Quote + Image Row -->
-            <div class="flexLeft">
-                <div>
-                    <p>“Hands down the best van conversion company in Canada if not North America”</p>
-                </div>
-
-                <div class="stars">
-                    <p class="p-bold paddingR">Scott Z, Manitoba, CAN</p>
-                    <img class="starImg" src="images/yama-stars.svg">
-                </div>  
-            </div>
-
-            <div class="flex-2">
-                <img src="images/yama-img-1.jpg" class="img-100">
-            </div>
-        </div>
-
-
-        <div class="margin-default mobileHero"> <!-- Graphic Text Row -->
-            <p class="graphic-text paddingT">The road is calling</p>
-        </div>
-
-    </section>
-    <!---------------- Mobile DRIVE US --------------------->
-
-
-    <!-- Explore Our Builds -->
-
-    <!---------------- DESKTOP explore  --------------------->
-    <section class="hiddenMobile" style="background-color: #04387C;">
-
-        <div class="padding-default margin-default"> <!-- Basecamp Row -->
-            
-            <div class="">
-                <h1 class="h1White">Support Bike Edmonton</h1>
-            </div>
-            <br>
-            <br>
-
-            <div class="flex-row-top">
-
-                <div class="imgContainer">
-                    <img src="images/bunchBikes.jpg" class="imgThree">  
-                    <div class="bottomGrad">
-                        <h1 class="imgSub">Donate Your</h1>
-                        <h1 class="imgSub">Used Bike</h1>
-                    </div>
-                </div>
-                           
-                <div class="imgContainer">
-                    <img src="images/purpParts.webp" class="imgThree">  
-                    <div class="bottomGrad">
-                        <h1 class="imgSub">Purchase</h1>
-                        <h1 class="imgSub">Membership</h1>
-                    </div>
-                    
-                </div>
-                <div class="imgContainer">
-                    <img src="images/bikeRepair.jpg" class="imgThree">  
-                    <div class="bottomGrad">
-                        <h1 class="imgSub">Join A</h1>
-                        <h1 class="imgSub">Workshop</h1>
-                    </div>
-                </div>
-
-            </div>
-
-            <br>
-            <br>
-            <h3 class="h3White">Our work has supported funding for the Bike Plan, bike lane construction, and programs that give people resources they need to ride.</h3>
-            <br>
-            <br>
-            <h3 class="h3White">We have helped thousands of people find a bike to ride and learn to fix their bike. Your financial support makes it possible for us to keep doing this work!</h3>
-
-            
-        </div>
-
-
-    </section>
-    <!---------------- DESKTOP DRIVE US  --------------------->
-
-    <!---------------- Mobile EXPLORE --------------------->
-    <section class="hiddenDesktop" >
-
-        <div id="explore-img">
-
-            <div class="gradient"></div>
-            <div class="explore reverse">
-                <h2 class="h2-reverse">Explore our Builds</h2>
-                <p>Get a better look at some of our favourite</p>
-                <p>builds to-date.</p>
-                <button class="btn-line all-caps"><a>Build Spotlight</a></button>
-            </div>
-
-        </div>
-
-    </section>
-    <!---------------- Mobile EXPLORE --------------------->
-
-
-
-
-    <!-- Footer -->
-    
-    <!---------------- Desktop FOOTER --------------------->
-    <footer class="hiddenMobile">
-    
-        <div class="sect-dark">
-            <div class="footerColumns">
-                <div class="footerColumn">
-                    <p class="reverse">Our vision is a city where cycling is safe, widespread, and accessible to people of all comfort levels.</p>
-                    <p class="reverse">Bike Edmonton acknowledges that we are located on Treaty 6 territory, a traditional gathering place for diverse Indigenous peoples including the Cree, Blackfoot, Métis, Nakota Sioux, Iroquois, Dene, Ojibway / Saulteaux / Anishinaabe, Inuit, and many others whose histories, languages, and cultures continue to influence our vibrant community. We acknowledge that we are all treaty people and we are committed to equity and justice for all our relations.</p>
-                    
-                </div>
-        
-                <div class="footerColumn">
-                    <div>
-                        <form>
-                            <label class="form-label reverse">Join Our Newsletter!</label>
-                            <input type="text" name="Email" class="form-field" placeholder="  sample@email.com    ">
-                            <input type="submit" value="Submit" class="form-button">
-                        </form>
-                    </div>
-                </div>
-        
-                <div class="footerColumn">
-                    <div>
-                        <div class="heading-underline"><h3 class="all-caps2 reverse">Socials</h3></div>
-                        <div>
-                            <a href="#"><img src="images/x.svg" class="social-icons"></a>
-                            <a href="#"><img src="images/yama-ig.svg" class="social-icons"></a>
-                            <a href="#"><img src="images/yama-youtube.svg" class="social-icons"></a>
-                            <a href="#"><img src="images/facebook.svg" class="social-icons"></a>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-    </footer>
-    <!---------------- Desktop FOOTER --------------------->
-
-
-    <!---------------- mobile FOOTER --------------------->
-    <footer class="hiddenDesktop2">
-        <div class="padding-80 margin-default mobileLeft"> <!-- Footer 1 Wrap -->
-    
-            <div class = "padTB" id="yama-logo"><img src="images/yama-logo.svg" alt="Yama Logo"></div>
-            
-            <div class="footer-left"><!-- Footer Left -->
-                <p>Your adventure starts here. Yama Vans is based in Calgary, Canada, delivering custom vans across North America. We build vehicles for adventure that allow you to spend more time living freely.</p>
-            </div>
-
-            <div class="copyright"><!-- Copyright -->
-                ©2024 Yama Vans. All Rights Reserved.
-            </div>
-
-            <div class="copyright"><!-- Copyright -->
-                <a href="#">Privacy Policy.</a>
-            </div>
-        
-            <div class="footer-right"><!-- Footer Right -->
-                <nav id="footer-nav">
-                    <ul>
-                        <li><a href="#">Process</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Stories</a></li>
-                        <li><a href="#">Work at Yama</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-                <button class="btn-grey all-caps"><a href="#">Explore our show Van, The Grand Teton</a></button>
-            </div>
-            
-            
-        
-        </div>
-        
-
-        <div class="sect-dark">
-
-            <div class="mobileLeft">
-
-                <div class="footerColumn">
-                    <form>
-                        <label class="form-label reverse">Email<span style="color: red;">*</span></label>
-                        <input type="text" name="Email" class="form-field">
-                        <input type="submit" value="Submit" class="form-button">
-                    </form>
-
-                    <br>
-                    
-                    <p class="reverse paddingB">Sign up for our newsletter to hear about new builds, events, and updates from our shop.</p>
-                    
-                </div>
-        
-                <div class="footerColumn">
-                    <div>
-                        <div class="heading-underline"><h3 class="all-caps reverse">Shop Address</h3></div>
-                        <p><a href="https://goo.gl/maps/NN1oxCDJmLGw9HSS8" class="reverse" style="text-decoration: none;">334 53 Ave SE Unit 100, Calgary, AB T2H 0N3</a></p>
-                    </div>
-                </div>
-        
-                <div class="footerColumn">
-                    <div>
-                        <div class="heading-underline"><h3 class="all-caps reverse">Social</h3></div>
-                        <div>
-                            <a href="#"><img src="images/yama-ig.svg" class="social-icons"></a>
-                            <a href="#"><img src="images/yama-youtube.svg" class="social-icons"></a>
-                            <a href="#"><img src="images/yama-pinterest.svg" class="social-icons"></a>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-    </footer>
-    <!---------------- mobile FOOTER --------------------->
-
+  </main>
+  <footer>
+    &copy; 2025 BeastlyOrca. All rights reserved.
+  </footer>
 </body>
 </html>
