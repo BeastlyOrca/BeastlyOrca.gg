@@ -1,0 +1,99 @@
+/* From our team */
+
+.grid-hero {
+    display: grid;
+    grid-template: auto auto auto 70px / repeat(12, 1fr);
+    column-gap: 48px;
+}
+
+.hero-head {
+    grid-area: 1 / 1 / span 2 / span 4;
+    margin-left: 80px;
+    background-color: peachpuff;
+}
+
+.hero-subhead {
+    grid-area: 1 / 10 / span 1 / span 3;
+    padding-bottom: 48px;
+    background-color: peachpuff;
+}
+
+.hero-img-1 {
+    grid-area: 2 / 5 / span 2 / span 8;
+    z-index: 2;
+}
+
+.hero-img-2 {
+    grid-area: 3 / 1 / span 3 / span 12;
+    min-height: 200px;
+    background-image: url(../images/yama-about-2.jpg);
+    object-fit: cover;
+    background-position: center;
+}
+
+.founders {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.founders-left {
+    grid-column: 1 / span 4;
+}
+
+.founders-right {
+    grid-column: 5 / span 8;
+}
+
+.values {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.values-left {
+    flex: 1;
+    /*margin-right: 24px;*/
+}
+
+.values-right {
+    flex: 2;
+    /*margin-left: 24px;*/
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.values-title {
+    display: flex;
+    gap: 8px;
+
+}
+
+.values-title h3 {
+    line-height: 0.8em;
+}
+
+.values-row-wrap {
+    border-top: solid 1px white;
+    padding-top: 24px;
+}
+
+
+.checkmark {
+    width: 12px;
+    margin-right: 4px;
+}
+
+.checkmark-wrap p {
+    display: inline;
+    font-weight: 600;
+}
+
+.checkmark-wrap {
+    border-top: 2px solid black;
+}
+
+.checkmark-border {
+    border-bottom: 2px solid black;
+    padding: 12px 0;
+}

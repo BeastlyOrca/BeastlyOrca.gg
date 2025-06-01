@@ -1,0 +1,1112 @@
+
+/* GLOBAL STYLES */
+
+/* Layout*/
+
+/* 
+    By: Nadir Bakridi 
+    3084652 P4 Bike Edmonton 
+    Nov.25/24
+
+ */
+
+body {
+    width: 100%;
+}
+
+.margin-default {
+    margin: 0 80px;
+}
+
+.flex-row-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flexCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flex-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-1 {
+    flex: 1;
+    background-color: #F1EFEC;
+}
+
+.flex-2 {
+    flex: 2;
+    background-color:  #F1EFEC;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template: repeat(2, 1fr) / 1fr 2fr;
+    column-gap: 104px;
+}
+
+.shopGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    grid-template-rows: repeat(2, 1fr);    /* 2 equal rows */
+    gap: 10px;
+}
+
+.sBody {
+    color: #000;
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+
+
+/* Paddings */
+
+.padding-default {
+    padding: 104px 0 144px 0;
+}
+
+.padding-80 {
+    padding: 80px 0;
+}
+
+.padding-40 {
+    padding: 40px 0;
+}
+
+.padding-bottom {
+    padding-bottom: 144px;
+}
+
+.padding-sides {
+    padding: 0 80px;
+}
+
+
+/* Backgrounds */
+
+.sect-dark {
+    background-color: #242424;
+    padding: 80px;
+}
+
+.sect-dark p {
+    color: white;
+}
+
+
+/* Text Styles */
+
+h1 {
+    color: black;
+    font-family: "EB Garamond";
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px 0px 16px 0px;
+}
+
+h2 {
+    font-family: "EB Garamond";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 100% */
+    color: rgb(255, 255, 255);
+    margin: 0px 0px 24px 0px;
+}
+
+.h2-reverse {
+    color: white;
+    font-family: "EB Garamond";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px 0px 16px 0px;
+}
+
+.h3-reverse {
+    color: white;
+    font-family: "EB Garamond";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px 0px 16px 0px;
+}
+
+p {
+    /*margin: 0px 0px 16px 0px;*/
+    color: black;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.p-bold {
+    color: black;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.p-lg {
+    color: black;
+    font-family: "EB Garamond";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px 0px 24px 0px;
+}
+
+a {
+    color: black;
+}
+
+button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.all-caps {
+    font-family: "Work Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    color: rgb(255, 255, 255);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+.all-caps2 {
+    font-family: "Work Sans";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    color: rgb(255, 255, 255);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.here {
+    font-family: "Work Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    color: #FF9500;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.graphic-text {
+    color: rgba(0, 0, 0, 0.10);
+    font-family: "EB Garamond";
+    font-size: 142px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: right;
+}
+
+.blueText {
+    color:#04387C;
+    font-size: 36px;
+}
+
+/* Hours of operation list*/
+.schedule {
+    list-style-type: disc; /* Adds bullet points */
+    padding-left: 20px; /* Adds space to the left of the list */
+}
+
+.schedule li {
+    font-size: 26px;
+    line-height: 1.6; 
+}
+
+.schedule strong {
+    font-weight: bold; /* Makes the day of the week bold */
+}
+
+
+
+/* Buttons */
+
+.btn-dark {
+    background-color: #04387C;
+    padding: 16px;
+    height: 50px;
+    color: white;
+    font-family: "Work Sans", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    /*text-transform: uppercase;*/
+    outline: none;
+    border: 1px solid #FFF;
+
+}
+
+
+.btnOrange {
+    width: 450px;
+    height: 70px;
+    flex-shrink: 0;
+    border-radius: 0px;
+    background: #FF9500;
+    color: #FFF;
+}
+
+.btn-dark:hover {
+    outline: 2px solid black;
+    background-color: white;
+    color: black;
+    border-style: none;
+}
+
+.btn-line {
+    padding: 12px 0px;
+    border-style: none;
+    border-bottom: 2px solid #000;
+    background-color:  #F1EFEC;
+}
+
+.btn-line-reverse {
+    color: white !important;
+    background-color: #242424;
+    padding: 12px 0px;
+    border-style: none;
+    border-bottom: 2px solid white;
+
+}
+
+.btn-grey {
+    padding: 12px;
+    border-style: none;
+    background-color: #F1EFEC;
+    width: 100%;          
+    text-align: left;    
+}
+.btn-grey a {
+    color: inherit;       
+    text-decoration: none; 
+    display: block;        
+}
+
+.reverse {
+    color: white !important;
+    text-align: left;
+}
+
+
+/* FORM */
+
+.form-label {
+    display: block;
+    margin: 0px 0px 16px 0px;
+    color: black;
+    font-family: "Work Sans";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-bottom: solid 2px white;
+}
+
+.form-field {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-style: none;
+    margin-bottom: 16px;
+}
+
+.form-button {
+    display: block;
+    border-style: none;
+    background-color: #FF9500;
+    color: #ffffff;
+    font-family: "Work Sans", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    height: 50px;
+    width: 100% ;
+}
+
+.sButton {
+    display: block;
+    border-style: none;
+    background-color: #FF9500;
+    color: #ffffff;
+    font-family: "Work Sans", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    height: 50px;
+    width: 250px;
+}
+
+
+/* HEADER */
+
+#yama-logo {
+    width: 141px;
+}
+
+#top-nav ul {
+    padding: 0;
+}
+
+#top-nav li {
+    list-style-type: none;
+    margin-right: 24px;
+    /*border-bottom: 2px solid white;*/
+    padding-bottom: 4px;
+    display: inline;
+}
+
+#top-nav li:hover {
+    border-bottom: 2px solid rgb(255, 255, 255);
+    padding-bottom: 4px;
+}
+
+
+
+/* HERO */
+
+.img-hero {
+    /*background-image: url(../images/yama-hero-1.jpg);*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 550px;
+}
+
+.img-100 {
+    width: 100%;
+}
+
+.imgFirstLeft {
+    width: 700px; /* may need changing*/ 
+    height: 500px;
+    
+}
+
+.imgNextRight {
+    width: 600px;
+    height: 250px;
+
+}
+
+.imgThree {
+    width: 400px;
+    height: 500px;
+}
+
+
+
+
+.subhead {
+    width: 20%;
+    padding: 12px 0px 12px 24px;
+    border-left: 2px solid black;
+}
+
+#explore-img {
+    background-image: url(../images/bikeHero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    position: relative; 
+    height: 570px;
+}
+
+.explore h2 {
+    color: white;
+}
+
+.explore p {
+    color: white;
+}
+
+.explore button {
+    color: white;
+    background-color: #FF9500;
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.h1Blue {
+    color: #04387C;
+    font-family: Roboto;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.h1White {
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    z-index: 2;
+
+}
+
+.h2O {
+    color: #FF9500;
+    font-family: Roboto;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.imgSub {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    position: relative;
+    top: 20px;
+    z-index: 2;
+
+}
+
+.imgSub2 {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: left;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    position: relative;
+    top: 40px;
+    z-index: 2;
+    padding-left: 40px;
+
+}
+
+.imgSub3 {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: left;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 20;
+    line-height: 40px;
+    position: relative;
+    top: 20px;
+    z-index: 2;
+    padding-left: 40px;
+
+}
+
+.shopSub {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: left;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 20;
+    line-height: 40px;
+    position: relative;
+    top: 0px;
+    z-index: 2;
+    padding-left: 20px;
+
+}
+
+.shopH2 {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: left;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 10;
+    line-height: 40px;
+    position: relative;
+    top: -25px;
+    z-index: 2;
+    padding-left: 23px;
+
+}
+
+.h3White {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.whiteText {
+    color: #FFF;
+}
+
+.explore {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start (left) of the flex container */
+    justify-content: flex-start; /* Optional: Ensures proper vertical alignment */
+    gap: 16px;
+    margin: 180px 80px; /* Remove auto centering */
+    z-index: 2;
+}
+
+.exploreF {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin: 180px auto 180px auto;
+    z-index: 2;
+}
+
+.gradient {
+
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.00) 3.36%, rgba(0, 0, 0, 0.80) 100%);
+    width: 1031px;
+    height: 571px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+}
+
+
+.shopGrad {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    width: 425px; 
+    height: 70px; 
+    position: absolute;
+    bottom: 0px; /* increased a bit extended past bottom otherwise*/
+    left: 0;
+    z-index: 1;
+}
+
+.bottomGrad {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    width: 400px; 
+    height: 150px; 
+    position: absolute;
+    bottom: 4px; /* increased a bit extended past bottom otherwise*/
+    left: 0;
+    z-index: 1;
+}
+
+.qGrad {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    width: 400px; 
+    height: 150px; 
+    position: absolute;
+    bottom: 27px; /* increased a bit extended past bottom otherwise*/
+    left: 0;
+    z-index: 1;
+}
+
+.bottomGrad2 {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    width: 750px; 
+    height: 150px; 
+    position: absolute;
+    bottom: 0px; /* increased a bit extended past bottom otherwise*/
+    left: 0;
+    z-index: 1;
+}
+
+.bottomGrad3 {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    width: 600px; 
+    height: 150px; 
+    position: absolute;
+    bottom: 0px; /* increased a bit extended past bottom otherwise*/
+    left: 0;
+    z-index: 1;
+}
+
+.imgContainer {
+    position: relative;
+    justify-content: space-between;
+    width: 100%; 
+}
+
+
+.imgContainer2 {
+    width: 700px; /* may need changing*/ 
+    height: 500px;
+    position: relative;
+    justify-content: space-between;
+    width: 100%; 
+}
+
+.imgContainer3 {
+    width: 600px; /* may need changing*/ 
+    height: 250px;
+    position: relative;
+    justify-content: space-between;
+    width: 100%; 
+}
+
+.imgShop {
+    width: 700px; /* may need changing*/ 
+    height: 200px;
+    position: relative; 
+    justify-content: space-between;
+    width: 100%; 
+}
+
+/* [^] Both above and below need to be edited simulatenously if changing stuff [v]*/
+
+.shopImg {
+    width: 425px; /* may need changing*/ 
+    height: 200px;
+}
+
+
+.aboutBody {
+    background-color: #04387C;
+}
+
+.aboutText {
+    color: #FFF;
+
+}
+
+/* FOOTER edited to use grid*/
+
+.footer-1 {
+
+}
+
+.footer-1-wrap {
+    display: grid;
+    grid-template: 1fr / repeat(12, 1fr);
+
+}
+
+.footer-left {
+    grid-column: 1 / span 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-right {
+    grid-column: 7 / span 6;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    max-height: 182px;
+    flex-wrap: wrap;
+}
+
+#footer-nav ul {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 2 columns */
+    grid-template-rows: repeat(1, auto);   /* 3 rows */
+    gap: 16px; 
+}
+
+
+#footer-nav li {
+    list-style: none;
+    font-family: "EB Garamond";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.copyright {
+    color: rgba(0, 0, 0, 0.5);
+    white-space: nowrap;  /* Text didnt wanna stay on one line*/
+    /* https://stackoverflow.com/questions/6667081/keep-a-line-of-text-as-a-single-line-wrap-the-whole-line-or-none-at-all */
+}
+
+.copyright a {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.heading-underline {
+    display: inline-block;
+    width: 100%;
+    border-bottom: solid 2px white;
+    margin-bottom: 16px;
+}
+
+.social-icons {
+    width: 70px;
+    height: 60px;
+    margin-right: 5px;
+}
+
+
+/* Additions */
+.footerColumns {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.footerColumn {
+    flex: 1; 
+    margin: 0 48px; 
+}
+
+
+
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.workText {
+    color: #000;
+    font-family: Roboto;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    bottom: 20px;
+    position: relative;
+}
+
+
+.hiddenDesktop {
+    display: none;
+    
+}
+
+.hiddenDesktop2 {
+    display: none;
+    
+}
+
+.mobileHero {
+    display: none; 
+    flex-direction: column;
+    align-items: center;   
+    text-align: center;
+}
+
+#explore-imgFooter {
+    background-image: url(../images/app.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    position: relative; 
+    color: #ffffff;
+}
+
+.gradientFooter {
+    background: radial-gradient(50% 50% at 50% 50%, #242424 0%, rgba(36, 36, 36, 0.00));
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* -----MEDIA QUERIES----- */ 
+
+/* SMARTPHONE */
+
+@media screen and (max-width: 480px) {
+
+    h2 {
+        font-family: "EB Garamond";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; /* 100% */
+        color: black;
+        margin: 0px 0px 24px 0px;
+    }
+
+    .mobileHero {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;  
+    }
+
+    .boxPad {
+        padding-top: 48px;
+        padding-bottom: 48px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    
+
+    .mobileLeft {
+        display: flex; 
+        flex-direction: column; 
+        align-items: left;
+        text-align: left;  
+    }
+
+    .flexLeft {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: left;
+    }
+
+    .stars{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .starImg {
+        position: relative; /* Enable fine-tuning of position */
+        top: -8px; /* Move the image slightly higher */
+    }
+
+    .paddingR {
+        padding-right: 8px;
+    }
+    
+
+    .hiddenMobile {
+        display: none;
+
+    }
+
+    .hiddenDesktop{
+        display: flex;
+        
+    }
+
+    .hiddenDesktop2 {
+        display: flex; 
+        flex-direction: column; 
+        align-items: left;
+        text-align: left;  
+    }
+    .hiddenDesktop3 {
+        display: flex; 
+        flex-direction: column; 
+        align-items: left;
+        text-align: left;  
+    }
+
+    .h2-reverse {
+        color: white;
+        font-family: "EB Garamond";
+        font-size: 72px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0px 0px 16px 0px;
+        text-align: left;
+    }
+
+    .h2-reverseF {
+        color: #fff;
+        font-family: "EB Garamond";
+        font-size: 72px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0px 0px 16px 0px;
+        text-align: center;
+    }
+
+    h1 {
+    color: black;
+    font-family: "EB Garamond";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px 0px 16px 0px;
+    }
+
+    
+
+
+    .padding-40 {
+        padding: 24 0px;
+        
+    }
+
+    .paddingB{
+        padding-bottom:  48px;
+        
+    }
+
+    .paddingL{
+        padding-bottom:  48px;
+        
+    }
+
+    .paddingT{
+        padding-bottom:  32px;
+        padding-top: 16px;
+        
+    }
+
+    .padTB {
+        padding-top: 24px;
+        padding-bottom: 48px;
+    }
+
+    .padding10 {
+        padding: 10 0px;
+    }
+    .padding12 {
+        padding: 12 0px;
+    }
+
+    .padding-80 {
+        padding: 24 0px;
+        
+    }
+
+    .margin-default {
+        margin: 0 24px;
+    }
+
+    .grid-2 {
+        display: grid;
+        grid-template: auto / 1fr;
+        column-gap: 104px;
+    }
+
+    .isHidden {
+        display: none;
+    }
+
+    .footer-1-wrap {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .footer-nav {
+        display: inline;       
+    }
+
+    .all-caps {
+        font-family: "Work Sans";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: black;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        text-align: left;
+        
+    }
+
+    
+
+    .graphic-text {
+        color: rgba(0, 0, 0, 0.10);
+        font-family: "EB Garamond";
+        font-size: 58px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: right;
+    }
+
+    .footer-right {
+        grid-column: 7 / span 1;
+    }
+
+    .sect-dark {
+        background-color: #242424;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    
+
+   
+
+}
+
+/* TABLET */
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    .hiddenMobile {
+        display: none;
+
+    }
+    .hiddenDesktop {
+        display: flex;
+        
+    }
+    
+}
