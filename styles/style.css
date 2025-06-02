@@ -10,6 +10,40 @@
 
  */
 
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #1e1e2f;
+    color: white;
+    padding: 2rem 1rem;
+}
+
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 3rem 1rem;
+}
+
+footer {
+    background-color: #eee;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+
 body {
     width: 100%;
 }
