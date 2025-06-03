@@ -132,7 +132,7 @@
 
 
 .centerText {
-    padding: 0 64px;
+    margin: 0 256px;
 }
 
 
@@ -247,17 +247,32 @@
   gap: 1rem; /* adds spacing between the images */
 }
 
+.imageRow a {
+  display: inline-block;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
 .imageRow img {
-  width: 24rem;
-  height: 24rem;
+  width: 20rem;
+  height: 20rem;
   object-fit: cover;
-  /*maintainsaspectratioandfillsthebox*/border-radius: 100%;
-  /*makestheimagecircular*/border: 8px solid #137000;
+  border-radius: 100%; /* makes the image circular */
+  border: 8px solid #137000; /* default green border */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+  /* Vendor prefixes (optional for full compatibility) */
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
+
+.imageRow a:hover img {
+  border-color: #150046;
+  box-shadow: 0 0 15px rgba(255, 64, 129, 0.6);
+}
+
+
 
 
 .flex-row-top {
@@ -315,10 +330,11 @@
 }
 
 .padTop2 {
-    padding-top: 0.5rem;
+    padding-top: 3.5rem;
 }
 
 .h1Padding {
+    padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
