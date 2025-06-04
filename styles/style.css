@@ -406,6 +406,7 @@
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
+  overflow: visible; /* Added to prevent clipping on hover scale */
 }
 
 .project-card {
@@ -416,6 +417,13 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   display: flex;
   flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transform */
+  will-change: transform; /* Optimizes performance */
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* Slightly deeper shadow on hover */
 }
 
 .project-card img {
@@ -424,6 +432,7 @@
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
+
 
 .caption {
   padding: 1rem;
