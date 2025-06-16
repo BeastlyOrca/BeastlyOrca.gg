@@ -257,7 +257,7 @@
   height: 20rem;
   object-fit: cover;
   border-radius: 100%; /* makes the image circular */
-  border: 8px solid #137000; /* default green border */
+  border: 8px solid #beffb6; /* default green border */
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 
   /* Vendor prefixes (optional for full compatibility) */
@@ -269,7 +269,7 @@
 
 .imageRow a:hover img {
   border-color: #150046;
-  box-shadow: 0 0 15px rgba(255, 64, 129, 0.6);
+  box-shadow: 0 0 15px rgba(64, 255, 150, 0.6);
 }
 
 
@@ -349,7 +349,7 @@
 }
 
 .sectionColour {
-    background-color: rgba(249, 250, 251); /*colour stolen from https://www.zachjordan.io/#extras background*/
+    background-color: #252C35; /*colour stolen from https://www.zachjordan.io/#extras background*/
 }
 
 .featureColour {
@@ -357,6 +357,7 @@
   margin-left: -40px;
   margin-right: -40px;
   background-color: rgb(31, 0, 41);
+  padding-bottom: 4rem;
 }
 
 
@@ -520,6 +521,17 @@
   flex-wrap: wrap;
 }
 
+.project-wrapper {
+  background-color: aquamarine;
+  width: 100%;
+  max-width: 1440px;
+  margin: 2rem auto;
+  padding: 2rem 0;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  /* Optional: add a subtle box-shadow for separation */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
 .project-gallery img {
   width: 30%;
   max-width: 300px;
@@ -616,8 +628,17 @@ h1 {
     font-style: normal;
     font-size: 45px;
     letter-spacing: 1.5px;
-    color: #137000;
+    color: #beffb6;
 }
+
+h4 {
+    font-family: "DM Serif Text", serif;
+    font-weight: 1;
+    font-style: normal;
+    font-size: 22px;
+    color: #ffffff;
+}
+
 
 h2 {
     font-family: "DM Serif Text", serif;
@@ -625,17 +646,7 @@ h2 {
     font-style: normal;
     font-size: 30px;
     letter-spacing: 1.5px;
-    color: #150046;
-}
-
-
-h2 {
-    font-family: "DM Serif Text", serif;
-    font-weight: 100;
-    font-style: normal;
-    font-size: 30px;
-    letter-spacing: 1.5px;
-    color: #150046;
+    color: #a9fcff;
 }
 
 
@@ -698,6 +709,7 @@ p {
     font-weight: 1;
     font-style: normal;
     font-size: 22px;
+    color: #000000;
     
 }
 
