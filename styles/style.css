@@ -247,24 +247,30 @@
   gap: 1rem; /* adds spacing between the images */
 }
 
+.imageRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;      /* Center the images */
+  align-items: center;
+  gap: 2rem;                    /* More consistent spacing */
+  flex-wrap: wrap;              /* Allow wrapping on small screens */
+}
+
 .imageRow a {
-  display: inline-block;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 1 0;                  /* Allow links to grow/shrink */
+  display: flex;
+  justify-content: center;
 }
 
 .imageRow img {
-  width: 20rem;
-  height: 20rem;
+  width: 100%;
+  max-width: 18rem;             /* Shrinks on small screens */
+  height: auto;
+  aspect-ratio: 1/1;            /* Always square */
   object-fit: cover;
-  border-radius: 100%; /* makes the image circular */
-  border: 8px solid #beffb6; /* default green border */
+  border-radius: 100%;
+  border: 8px solid #beffb6;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
-
-  /* Vendor prefixes (optional for full compatibility) */
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
 }
 
 .imageRow a:hover img {
@@ -723,13 +729,26 @@ p {
 @media screen and (max-width: 480px) {
 
     h2 {
-        font-family: "EB Garamond";
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal; /* 100% */
-        color: black;
-        margin: 0px 0px 24px 0px;
+      font-family: "EB Garamond";
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal; /* 100% */
+      color: #a9fcff;
+      margin: 0px 0px 24px 0px;
+
+    }
+
+
+    .imageRow {
+      flex-direction: column;
+      gap: 1rem;
+
+    }
+
+
+    .imageRow img {
+      max-width: 10rem;
     }
 
     .mobileHero {
