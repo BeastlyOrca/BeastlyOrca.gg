@@ -12,3 +12,7 @@ Ideas:
 add 3 links for the git, youtube, linked or insta
 ballpark franks eventually
 ssl bu8M076BOu
+
+
+
+https://publications.immersivelrn.org/index.php/practitioner/article/view/411
