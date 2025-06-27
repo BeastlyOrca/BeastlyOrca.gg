@@ -269,7 +269,7 @@
   aspect-ratio: 1/1;            /* Always square */
   object-fit: cover;
   border-radius: 100%;
-  border: 8px solid #beffb6;
+  border: 8px solid #95f39b;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -278,6 +278,13 @@
   box-shadow: 0 0 15px rgba(64, 255, 150, 0.6);
 }
 
+.paper-highlight {
+  background: #e6f7ff;
+  border-left: 6px solid #662d91;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 2rem 0;
+}
 
 
 
@@ -355,7 +362,7 @@
 }
 
 .sectionColour {
-    background-color: #252C35; /*colour stolen from https://www.zachjordan.io/#extras background*/
+    background-color: #353a42; /* old colour #252C35; */
 }
 
 .featureColour {
@@ -503,7 +510,7 @@
 .project-text a {
   display: inline-block;
   background-color: #662d91;
-  color: white;
+  color: #fff1db;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   text-decoration: none;
@@ -570,7 +577,7 @@
 
 .project-description a {
   background-color: #662d91;
-  color: white;
+  color: #fff1db;
   text-decoration: none;
   padding: 0.6rem 1.2rem;
   border-radius: 0.5rem;
@@ -634,7 +641,7 @@ h1 {
     font-style: normal;
     font-size: 45px;
     letter-spacing: 1.5px;
-    color: #beffb6;
+    color: #95f39b;
 }
 
 h4 {
@@ -642,7 +649,7 @@ h4 {
     font-weight: 1;
     font-style: normal;
     font-size: 22px;
-    color: #ffffff;
+    color: #fffbf4;
 }
 
 
@@ -652,12 +659,12 @@ h2 {
     font-style: normal;
     font-size: 30px;
     letter-spacing: 1.5px;
-    color: #a9fcff;
+    color: #83ecff;
 }
 
 
 nav a {
-    color: white;
+    color: #fff1db;
     margin: 0 1rem;
     text-decoration: none;
     font-weight: bold;
@@ -737,6 +744,11 @@ p {
       color: #a9fcff;
       margin: 0px 0px 24px 0px;
 
+    }
+
+    .centerText {
+      max-width: 100%;
+      padding: 0 0.5rem;
     }
 
 

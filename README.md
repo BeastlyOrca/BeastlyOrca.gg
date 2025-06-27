@@ -16,3 +16,6 @@ ssl bu8M076BOu
 
 
 https://publications.immersivelrn.org/index.php/practitioner/article/view/411
+
+
+https://icolorpalette.com/589950_0b6311_fff1db_3c0054_470045
