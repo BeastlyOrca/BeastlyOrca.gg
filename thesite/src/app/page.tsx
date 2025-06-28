@@ -138,7 +138,7 @@ export default function Portfolio() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h1 className="text-4xl sm:text-6xl font-bold mb-6">
-              Hi, I&apos;m <span className="text-emerald-400">Nadir Bakridi</span>
+              Hi, Im <span className="text-emerald-400">Nadir Bakridi</span>
             </h1>
             <p className="text-xl text-slate-300 mb-8 max-w-3xl mx-auto">
               Developer, Creator, and Digital Innovator building the future one project at a time
@@ -186,7 +186,7 @@ export default function Portfolio() {
                 celebrate the work of friends and family, giving them a platform to share their ideas and talents.
               </p>
               <p className="text-slate-300 text-lg leading-relaxed">
-                Whether you&apos;re here to explore what we&apos;ve made, collaborate on something new, or just surfing the
+                Whether youre here to explore what weve made, collaborate on something new, or just surfing the
                 internet, the goal here is to create things that are fun to play, useful to use, or worth sharing.
               </p>
             </div>
@@ -400,10 +400,10 @@ export default function Portfolio() {
       {/* Contact Section */}
       <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-emerald-400 mb-4">Let&apos;s Create Something Amazing</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-emerald-400 mb-4">Lets Create Something Amazing</h2>
           <p className="text-lg text-slate-300 mb-8 max-w-2xl mx-auto">
-            How&apos;s it going? Thanks for checking out my website! Here, you can find a glimpse into the projects and ideas
-            I&apos;m passionate about. Ready to collaborate or just want to chat about tech?
+            Hows it going? Thanks for checking out my website! Here, you can find a glimpse into the projects and ideas
+            Im passionate about. Ready to collaborate or just want to chat about tech?
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700">
