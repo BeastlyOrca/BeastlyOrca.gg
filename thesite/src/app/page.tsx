@@ -47,11 +47,16 @@ export default function Portfolio() {
   }
 
   return (
+
     <div className="min-h-screen bg-slate-900 text-white">
+
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-slate-900/95 backdrop-blur-md border-b border-slate-700 z-50">
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
           <div className="flex justify-between items-center py-4">
+
             <div className="text-2xl font-bold text-white italic">BeastlyOrca</div>
 
             {/* Desktop Navigation */}
@@ -75,15 +80,20 @@ export default function Portfolio() {
               ))}
             </div>
 
+
+            {/* ############## NAV BUTTONS ##################### */}
             <div className="hidden md:flex items-center space-x-4">
-              <Button
-                variant="outline"
-                size="sm"
-                className="border-emerald-500 text-emerald-400 hover:bg-emerald-500 hover:text-white bg-transparent"
-              >
-                <Download className="mr-2 h-4 w-4" />
-                Resume
-              </Button>
+              <a href="/downloadables/StyledResumeRedo.pdf" download="NadirBakridi_Resume.pdf">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="border-emerald-500 text-emerald-400 hover:bg-emerald-500 hover:text-white bg-transparent"
+                >
+                  <Download className="mr-2 h-4 w-4" />
+                  Resume
+                </Button>
+              </a>
+
               <Button asChild size="sm" className="bg-emerald-600 hover:bg-emerald-700">
                 <Link href="/webGLGame">
                   <Gamepad2 className="mr-2 h-4 w-4" />
@@ -133,25 +143,35 @@ export default function Portfolio() {
         </div>
       </nav>
 
-      {/* Hero Section */}
+      {/* ############ IM NADIR SECTION ############ */}
       <section id="home" className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+
         <div className="max-w-7xl mx-auto">
+
           <div className="text-center mb-16">
+
             <h1 className="text-4xl sm:text-6xl font-bold mb-6">
-              Hi, Im <span className="text-emerald-400">Nadir Bakridi</span>
+              Hi, I am <span className="text-emerald-400">Nadir Bakridi</span>
             </h1>
+
             <p className="text-xl text-slate-300 mb-8 max-w-3xl mx-auto">
               Developer, Creator, and Digital Innovator building the future one project at a time
             </p>
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+
               <Button
+                asChild
                 size="lg"
                 className="bg-emerald-600 hover:bg-emerald-700"
-                onClick={() => scrollToSection("contact")}
               >
-                <Mail className="mr-2 h-4 w-4" />
-                Get In Touch
+                <a href="mailto:beastlyorca@gmail.com">
+                  <Mail className="mr-2 h-4 w-4" />
+                  Get In Touch
+                </a>
+                
               </Button>
+
               <Button
                 size="lg"
                 variant="outline"
@@ -161,9 +181,11 @@ export default function Portfolio() {
                 <Code className="mr-2 h-4 w-4" />
                 View My Work
               </Button>
+
             </div>
           </div>
         </div>
+
       </section>
 
       {/* About Section */}
@@ -220,22 +242,31 @@ export default function Portfolio() {
             <div className="flex flex-col md:flex-row justify-center items-center gap-64">
 
               {[
-                { src: "/images/grad1.jpeg", alt: "Graduation Photo", label: "Professional" },
-                { src: "/images/imgMe1.jpg", alt: "Professional Photo", label: "Github" },
-                { src: "/images/imgMe4.png", alt: "Casual Photo", label: "Creator" },
+                { src: "/images/grad1.jpeg", alt: "Graduation Photo", label: "Professional", link: "https://www.linkedin.com/in/nadir-bakridi-04132116a/"},
+                { src: "/images/imgMe1.jpg", alt: "Professional Photo", label: "Github", link:"https://github.com/BeastlyOrca" },
+                { src: "/images/imgMe4.png", alt: "Casual Photo", label: "Creator", link: "https://www.youtube.com/@beastlyorca192" },
               ].map((photo, index) => (
                 <div key={index} className="text-center">
 
                   <div className="relative w-60 h-60 mx-auto">
 
+                    <a
+                      href={photo.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block"
+                      >
+                    
+
                     <Image
                       src={photo.src}
                       alt={photo.alt}
                       fill
-                      className="object-cover rounded-full border-4 border-emerald-400 shadow-lg hover:scale-105 transition-transform"
-                      sizes="160px"
+                      className="object-cover rounded-full border-4 border-emerald-400 shadow-lg hover:scale-105 transition-transform group-hover:border-[#150046] transition-all duration-300 shadow-lg"
+                      sizes="240px"
                     />
 
+                    </a>
                   </div>
 
                   <p className="text-emerald-400 font-medium mt-3">{photo.label}</p>
