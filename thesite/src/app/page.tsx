@@ -299,32 +299,33 @@ export default function Portfolio() {
                 description:
                   "Making the classic tabletop game digital",
                 image: "/images/Crokinole.png",
-                tags: ["WebGL", "JavaScript", "GLSL", "Physics"],
-                github: "#",
+                tags: ["C#", "Unity", "Android", "Physics", "Apple", "MacOS"],
+                github: "https://github.com/BeastlyOrca/Crokinole",
+                demo: "https://github.com/BeastlyOrca/Crokinole",
+                
+              },
+              {
+                title: "Published Conference Paper",
+                description:
+                  "Developing Virtual Simulation of Optic Lab in Physics Education using Virtual Reality",
+                image: "/images/VR.png",
+                tags: ["C#", "Unity", "VR", "AI", "Physics", "Education", "Conference"],
+                github: "https://github.com/Harisk25/VRFinalProject",
                 demo: "#",
                 featured: true,
               },
               {
-                title: "Creative Portfolio Platform",
-                description:
-                  "A dynamic platform for showcasing creative work with interactive galleries and collaboration tools.",
-                image: "/placeholder.svg?height=200&width=300",
-                tags: ["React", "Node.js", "MongoDB", "Socket.io"],
-                github: "#",
-                demo: "#",
-              },
-              {
-                title: "AI-Powered Tool Suite",
-                description: "Collection of AI-powered utilities for content creation and productivity enhancement.",
-                image: "/placeholder.svg?height=200&width=300",
-                tags: ["Python", "TensorFlow", "React", "API"],
-                github: "#",
-                demo: "#",
+                title: "Hookshot Henry",
+                description: "My first attempt at a game, a 3D platformer with a grappling hook mechanic. Password is: swingintoaction",
+                image: "/images/HH.png",
+                tags: ["Unity", "2D", "Physics", "Procedural Generation", "C#", "Game Development"],
+                github: "https://github.com/jemery-dev/CMPT330-Project",
+                demo: "https://jemery-dev.itch.io/hookshot-henry",
               },
             ].map((project, index) => (
               <Card
                 key={index}
-                className={`group hover:shadow-xl transition-all bg-slate-800 border-slate-600 ${project.featured ? "ring-2 ring-emerald-400" : ""}`}
+                className={`group pt-0 hover:shadow-xl transition-all bg-slate-800 border-slate-600 ${project.featured ? "ring-2 ring-emerald-400" : ""}`}
               >
                 <CardHeader className="p-0">
                   <div className="relative">
@@ -349,19 +350,43 @@ export default function Portfolio() {
                     ))}
                   </div>
                   <div className="flex gap-2">
+
                     <Button
+                      asChild
                       size="sm"
                       variant="outline"
                       className="border-slate-600 text-slate-300 hover:bg-slate-700 bg-transparent"
                     >
-                      <Github className="mr-2 h-4 w-4" />
-                      Code
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Github className="mr-2 h-4 w-4" />
+                        Code
+                      </a>
+
                     </Button>
-                    <Button size="sm" className="bg-emerald-600 hover:bg-emerald-700">
-                      <ExternalLink className="mr-2 h-4 w-4" />
-                      Demo
+
+                    <Button
+                      asChild
+                      size="sm"
+                      className="bg-emerald-600 hover:bg-emerald-700"
+                    >
+
+                      <a
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ExternalLink className="mr-2 h-4 w-4" />
+                        Demo
+                      </a>
+
                     </Button>
+
                   </div>
+                  
                 </CardContent>
               </Card>
             ))}
