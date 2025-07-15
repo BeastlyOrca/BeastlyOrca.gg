@@ -139,10 +139,20 @@ export default function Portfolio() {
                   </button>
                 ))}
                 <div className="flex flex-col space-y-2 pt-4">
-                  <Button variant="outline" size="sm" className="border-emerald-500 text-emerald-400 bg-transparent">
-                    <Download className="mr-2 h-4 w-4" />
-                    Resume
-                  </Button>
+
+                  <a href="/downloadables/StyledResumeRedo.pdf" download="NadirBakridi_Resume.pdf">
+
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="border-emerald-500 text-emerald-400 bg-transparent"
+                    >
+                      <Download className="mr-2 h-4 w-4" />
+                      Resume
+                    </Button>
+                    
+                  </a>
+
                   <Button size="sm" className="bg-emerald-600 hover:bg-emerald-700">
                     <Gamepad2 className="mr-2 h-4 w-4" />
                     WebGLGame
