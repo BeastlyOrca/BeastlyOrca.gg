@@ -8,15 +8,23 @@ import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
 import Link from "next/link"
 
+import {
+  Palette,
+  Presentation,
+  Cpu,
+  Lightbulb,
+} from "lucide-react";
+
 
 
 export default function Portfolio() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [activeSection, setActiveSection] = useState("home")
-
+  const [showTopBtn, setShowTopBtn] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
+      // Section highlight logic
       const sections = ["home", "about", "portfolio", "skills", "contact"]
       const scrollPosition = window.scrollY + 100
 
@@ -32,6 +40,9 @@ export default function Portfolio() {
           }
         }
       }
+
+      // Show/hide Back to Top button
+      setShowTopBtn(window.scrollY > 300)
     }
 
     window.addEventListener("scroll", handleScroll)
@@ -94,7 +105,7 @@ export default function Portfolio() {
                 </Button>
               </a>
 
-              <Button asChild size="sm" className="bg-emerald-600 hover:bg-emerald-700">
+              <Button asChild size="sm" className="bg-emerald-600 hover:bg-emerald-700 hidden md:inline-flex">
                 <Link href="/webGLGame">
                   <Gamepad2 className="mr-2 h-4 w-4" />
                   WebGLGame
@@ -311,7 +322,7 @@ export default function Portfolio() {
                 image: "/images/VR.png",
                 tags: ["C#", "Unity", "VR", "AI", "Physics", "Education", "Conference"],
                 github: "https://github.com/Harisk25/VRFinalProject",
-                demo: "#",
+                demo: "https://publications.immersivelrn.org/index.php/practitioner/article/view/411",
                 featured: true,
               },
               {
@@ -380,7 +391,7 @@ export default function Portfolio() {
                         rel="noopener noreferrer"
                       >
                         <ExternalLink className="mr-2 h-4 w-4" />
-                        Demo
+                        {project.title === "Published Conference Paper" ? "Paper" : "Demo"}
                       </a>
 
                     </Button>
@@ -394,36 +405,88 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Skills Section */}
+      {/*######### Skills Section ############*/}
       <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-800">
+
         <div className="max-w-7xl mx-auto">
+
           <div className="text-center mb-16">
+
             <h2 className="text-3xl sm:text-4xl font-bold text-emerald-400 mb-4">Skills & Technologies</h2>
             <p className="text-lg text-slate-300 max-w-2xl mx-auto">
-              A diverse toolkit for bringing creative ideas to life through code and design.
+              A multi-disciplinary blend of software engineering, game design, and user-centered thinking.
             </p>
+
           </div>
+
+          {/* Skills Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
                 icon: <Code className="h-8 w-8 text-emerald-400" />,
                 title: "Frontend Development",
-                skills: ["React", "Next.js", "TypeScript", "WebGL", "Three.js", "Tailwind CSS"],
+                skills: [
+                  "React", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS", 
+                  "HTML/CSS", "Framer Motion", "ShadCN/UI", "Lucide Icons"
+                ],
               },
               {
                 icon: <Database className="h-8 w-8 text-emerald-400" />,
-                title: "Backend & Database",
-                skills: ["Node.js", "Python", "PostgreSQL", "MongoDB", "Redis", "GraphQL"],
+                title: "Backend & APIs",
+                skills: [
+                  "Node.js", "Express", "Python", "PostgreSQL", "MongoDB", 
+                  "REST APIs", "GraphQL"
+                ],
               },
               {
                 icon: <Globe className="h-8 w-8 text-emerald-400" />,
-                title: "DevOps & Cloud",
-                skills: ["Docker", "AWS", "Vercel", "GitHub Actions", "Kubernetes", "CI/CD"],
+                title: "DevOps & Tools",
+                skills: [
+                  "Docker", "GitHub Actions", "CI/CD", "Vercel", "AWS", 
+                  "Bash", "Unix", "Version Control", "Firebase", "Netlify"
+                ],
               },
               {
                 icon: <Gamepad2 className="h-8 w-8 text-emerald-400" />,
-                title: "Game Development",
-                skills: ["WebGL", "Unity", "C#", "GLSL", "Physics", "3D Graphics"],
+                title: "Game & XR Development",
+                skills: [
+                  "Unity", "C#", "VR (Meta Quest)", "WebGL", 
+                  "GLSL", "Three.js", "Physics", "AI Sensors", "Procedural Generation", 
+                  "Pathfinding"
+                ],
+              },
+              {
+                icon: <Palette className="h-8 w-8 text-emerald-400" />,
+                title: "Design & UX",
+                skills: [
+                  "Figma", "UX Auditing", "Wireframing", "Accessibility", 
+                  "Responsive Design", "User Research", "Digital Experience Design"
+                ],
+              },
+              {
+                icon: <Presentation className="h-8 w-8 text-emerald-400" />,
+                title: "Teaching & Communication",
+                skills: [
+                  "Mentorship", "Curriculum Design", "Workshop Facilitation", 
+                  "Code Ninjas Instructor", "Agile Collaboration", "Documentation"
+                ],
+              },
+              {
+                icon: <Cpu className="h-8 w-8 text-emerald-400" />,
+                title: "CS Fundamentals",
+                skills: [
+                  "Data Structures", "Algorithms", "OOP", "Software Architecture", 
+                  "Multithreading", "Schedulers", "Regex", "Shell Tools"
+                ],
+              },
+              {
+                icon: <Lightbulb className="h-8 w-8 text-emerald-400" />,
+                title: "Research & Projects",
+                skills: [
+                  "AI Sensors vs Conventional", "Genetic Programming", 
+                  "Behavior Trees", "ML Concepts", "Academic Writing", 
+                  "Prototyping", "VR Curriculum Design"
+                ],
               },
             ].map((category, index) => (
               <Card
@@ -453,7 +516,7 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Contact Section */}
+      {/*############### Contact Section ###################*/}
       <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-emerald-400 mb-4">Lets Create Something Amazing</h2>
@@ -462,39 +525,73 @@ export default function Portfolio() {
             Im passionate about. Ready to collaborate or just want to chat about tech?
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700">
-              <Mail className="mr-2 h-4 w-4" />
-              Send Email
+            <Button
+              asChild
+              size="lg"
+              className="bg-emerald-600 hover:bg-emerald-700"
+            >
+              <a href="mailto:beastlyorca@gmail.com">
+                <Mail className="mr-2 h-4 w-4" />
+                Send Email
+              </a>
             </Button>
             <Button
+              asChild
               size="lg"
               variant="outline"
               className="border-emerald-500 text-emerald-400 hover:bg-emerald-500 hover:text-white bg-transparent"
             >
-              <Linkedin className="mr-2 h-4 w-4" />
-              Connect on LinkedIn
+              <a
+                href="https://www.linkedin.com/in/nadir-bakridi-04132116a/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Linkedin className="mr-2 h-4 w-4" />
+                Connect on LinkedIn
+              </a>
             </Button>
           </div>
           <div className="flex justify-center space-x-6">
-            <a href="#" className="text-slate-400 hover:text-emerald-400 transition-colors">
+            <a href="https://github.com/BeastlyOrca" className="text-slate-400 hover:text-emerald-400 transition-colors">
               <Github className="h-8 w-8" />
             </a>
-            <a href="#" className="text-slate-400 hover:text-emerald-400 transition-colors">
+            <a href="https://www.linkedin.com/in/nadir-bakridi-04132116a/" className="text-slate-400 hover:text-emerald-400 transition-colors">
               <Linkedin className="h-8 w-8" />
             </a>
-            <a href="#" className="text-slate-400 hover:text-emerald-400 transition-colors">
+            <a href="mailto:beastlyorca@gmail.com" className="text-slate-400 hover:text-emerald-400 transition-colors">
               <Mail className="h-8 w-8" />
             </a>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
+      {/*################# Back to Top Button #################*/}
+
+      {showTopBtn && (
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="fixed bottom-8 right-8 z-50 bg-[#3b1966] hover:bg-[#5b2a91] text-white p-3 rounded-full shadow-lg transition-all transform hover:-translate-y-1"
+          aria-label="Back to top"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+          </svg>
+
+        </button>
+      )}
+
+      
+      {/*##############  Footer ################*/}
       <footer className="bg-slate-900 border-t border-slate-700 py-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-slate-400">
-            © 2024 BeastlyOrca - Nadir Bakridi. Building the future, one project at a time.
+            © 2025 BeastlyOrca - Nadir Bakridi. Building the future, one project at a time.
           </p>
+
+          <p className="text-slate-400">
+            Available for work!
+          </p>
+
         </div>
       </footer>
     </div>

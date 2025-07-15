@@ -14,7 +14,14 @@ function setup() {
     `;
 
     // Insert the tag into the HMTL document
-    document.getElementById('myNavBar').appendChild(navTag);
+    // ...existing code...
+    var navBar = document.getElementById('myNavBar');
+
+    if (navBar) {
+        navBar.appendChild(navTag);
+    } // If not found, do nothing (no error thrown)
+    
+    
 }
 
 /**

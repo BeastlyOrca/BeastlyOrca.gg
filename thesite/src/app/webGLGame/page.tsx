@@ -64,11 +64,20 @@ export default function WebGLGamePage() {
         </div>
       </nav>
 
+      {/* Notification Banner */}
+      <div className="pt-20">
+
+        <div className="bg-amber-500 text-black text-center py-2 font-semibold">
+          If the game does not load properly the first time, please refresh the page.
+        </div>
+        
+      </div>
+
       {/* Error display */}
-      <div id="webglError" className="pt-20"></div>
+      <div id="webglError" className=""></div>
 
       {/* Main content */}
-      <main className="pt-20">
+      <main className="pt-10rrr">
         <section className="py-8 px-4 text-center">
           <h2 className="text-3xl font-bold text-emerald-400 mb-4">CMPT370 Final Project</h2>
           <div className="flex justify-center gap-8 mb-4">
