@@ -234,8 +234,8 @@ export default function Portfolio() {
                 celebrate the work of friends and family, giving them a platform to share their ideas and talents.
               </p>
               <p className="text-slate-300 text-lg leading-relaxed">
-                Whether youre here to explore what weve made, collaborate on something new, or just surfing the
-                internet, the goal here is to create things that are fun to play, useful to use, or worth sharing.
+                Whether you are here to explore what we have made, collaborate on something new, or just surfing the
+                net, BeastlyOrca is here to create things that are fun to play, useful to use, or worth sharing.
               </p>
             </div>
             <div className="relative">
