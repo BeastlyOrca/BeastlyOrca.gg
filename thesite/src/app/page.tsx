@@ -342,7 +342,7 @@ export default function Portfolio() {
               },
               {
                 title: "Hookshot Henry",
-                description: "My first attempt at a game, a 3D platformer with a grappling hook mechanic. Password is: swingintoaction",
+                description: "My first attempt at a game, a 2D platformer with a grappling hook mechanic. Password is: swingintoaction",
                 image: "/images/HH.png",
                 tags: ["Unity", "2D", "Physics", "Procedural Generation", "C#", "Game Development"],
                 github: "https://github.com/jemery-dev/CMPT330-Project",
